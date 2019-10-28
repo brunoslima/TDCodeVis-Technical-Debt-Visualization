@@ -1,0 +1,67 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.filtro-boxplot{
+  float: right;
+  position: absolute;
+  top: 55%;
+  left: 80%;
+}
+
+.legenda-boxplot{
+  width: 85%;
+}
+
+.legenda-boxplot p{
+  display: inline-block;
+  width: 10%;
+  margin-left: 7%;
+  margin-top: 10px;
+}
+
+#boxplot{
+  width: 85%;
+  margin-top: 5%;
+}
+
+.box {
+  font: 10px sans-serif;
+  z-index: 9999999999999;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+.box line,
+.box rect,
+.box circle {
+  fill: rgb(204,204,204);
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.box .center {
+  stroke-dasharray: 3,3;
+}
+
+.box .outlier {
+  fill: none;
+  stroke: #ccc;
+}
+
+.axis {
+  font: 12px sans-serif;
+}
+ 
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+ 
+.y-axis path { 
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

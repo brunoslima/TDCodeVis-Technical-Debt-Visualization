@@ -1,0 +1,134 @@
+body {
+	overflow: hidden;
+	margin: 0;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+#chart {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+.filtro{
+  margin-top: 330px;
+  margin-left: 900px;
+  float: right;
+  top: 0;
+  position: absolute;
+}
+
+.filtro2{
+  margin-top: 30px;
+  margin-left: 900px;
+  float: right;
+  top: 0;
+  position: absolute;
+}
+
+.legenda {
+  width: 120px;
+  height: 130px;
+  float: right;
+  top: 0;
+  display: inline-block;
+  margin-top: 120px;
+  margin-left: 900px;
+  position: absolute;
+}
+
+.legenda #circulo1 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(255,0,0);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda #circulo2 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(251,115,10);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda #circulo3 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(10,39,204);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda #circulo4 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(255,251,40);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda #circulo5 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(0,255,0);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda #circulo6 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(128,0,128);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda #circulo7 {
+   float: left;
+     width: 8px;
+     height: 8px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: rgb(105,105,105);
+     padding-right: 2px;
+     padding-top: 6px;
+}
+
+.legenda h1{
+  font: 10px helvetica;
+  padding-top: 2px;
+  padding-right: 2px;
+}
+
+.legenda h2{
+  font: 10px helvetica;
+  padding-top: 2px;
+}

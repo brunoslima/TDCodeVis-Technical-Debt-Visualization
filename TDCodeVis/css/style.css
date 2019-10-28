@@ -1,0 +1,267 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.cabecalho{
+
+	width: 100%;
+	height: 8%;
+	background: #353535;
+  z-index: 99999;
+}
+
+.cabecalho #title{
+  color: #0097e2;
+  font-size: 27px;
+  padding-top: 12px;
+  padding-left: 32px;
+  font-weight: bold;
+}
+
+/* define a fixed width for the entire menu */
+.menu {
+  width: 15%;
+  height: 92%;
+  background: #515151;
+  z-index: 99999; 
+}
+
+/* reset our lists to remove bullet points and padding */
+.menuprincipal, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuprincipal img{
+  margin-right: 7px;
+  height: 20px;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.menuprincipal a {
+  display: block;
+  background-color: #515151; /*Cinza levemente escuro*/
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* add hover behaviour */
+.menuprincipal a:hover {
+    background-color: #0097e2; /*Azul claro*/
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.menuprincipal li:hover .submenu {
+  display: block;
+  max-height: 500px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #777777; /*Cinza claro*/
+  font-size: 15px;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #0097e2; /*Azul claro*/
+  font-size: 15px;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  webkit-transition: all 0.5s ease-out;
+}
+
+#btn-estilo{
+  width: 60px;
+  background: #0097e2;
+  color: #ffffff;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #000000;
+}
+
+#btn-estilo2{
+  width: 80px;
+  background: #0097e2;
+  color: #ffffff;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #000000;
+}
+
+#btn-estilo:hover{
+  background: #00ff15;
+  color: #000000;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #000000;
+}
+
+#btn-estilo2:hover{
+  background: #00ff15;
+  color: #000000;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #000000;
+}
+
+.conteudo{
+
+  width: 85%;
+  float: right;
+  top: 0;
+  margin-top: 70px;
+  margin-left: 15%;
+  position: absolute;
+
+}
+
+.conteudo #title{
+  margin-left: 5%;
+  margin-bottom: 25px;
+}
+
+.conteudo-interno p{
+  margin-left: 8%;
+}
+
+.conteudo-interno form{
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 8%;
+
+}
+
+.conteudo-interno form input{
+  display: block;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.conteudo-interno form #btn{
+  width: 25%;
+  height: 30px;
+  float: right;
+  margin-right: 20%;
+  background: #0097e2;
+  color: #ffffff;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #000000;
+}
+
+.conteudo-interno form #btn:hover{
+  width: 25%;
+  float: right;
+  margin-right: 20%;
+  background: #00ff15;
+  color: #000000;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #000000;
+}
+
+.conteudo-home{
+  margin-left: 25%;
+  margin-top: 200px;
+}
+
+.conteudo-home #title-home{
+  font-size: 45px;
+  margin-left: 8%;
+}
+
+.conteudo-home #p-home{
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+.conteudo-about{
+  margin-left: 1%;
+  margin-top: 40px;
+  width: 95%;
+}
+
+.conteudo-about #title-about{
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.conteudo-about #p-about{
+  font-size: 15px;
+  margin-left: 5%;
+}
+
+.modal-page-load{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-box-load{
+  width: 30%;
+  height: 30%;
+  border-radius: 4px;
+  position: relative;
+}
+
+.modal-box-load p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 10%;
+  position: relative;
+}
+
+.loader {
+  border: 16px solid #dddddd;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin-left: 30%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Para funcionar no navegador Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
