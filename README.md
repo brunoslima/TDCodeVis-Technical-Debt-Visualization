@@ -8,4 +8,4 @@ São Paulo State University - Faculty of Sciences and Technology - Presidente Pr
 
 Applied Software Engineering Research Group
 
-LaPESA - Applied Software Engineering Research Lab
+LaPESA - Laboratory of Software Engineering Research and Applications
